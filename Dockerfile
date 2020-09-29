@@ -8,7 +8,6 @@ RUN apt-get update
 WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
-RUN python3 manage.py migrate
 COPY . .
 
 EXPOSE 8000
